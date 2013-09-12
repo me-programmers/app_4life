@@ -9,8 +9,7 @@
     <%= csrf_meta_tags %>
     <%= yield(:head) %>
   </head>
-  <body class="<%= controller_name %> <%= action_name %>">
-  <div id="bodyback"><%= image_tag("back_02.png") %></div>
+  <body class="<%= controller_name %> <%= action_name %>">  
     <div class="navbar-wrapper">
       <div class="container">
         <div class="navbar navbar-inverse">
@@ -36,30 +35,3 @@
     </div> <!--! end of .navbar-wrapper -->
   </body>
 </html>
-
-<script>
-  $(window).load(function() {    
-
-  var theWindow        = $(window),
-      $bg              = $("#bodyback"),
-      aspectRatio      = $bg.width() / $bg.height();
-                    
-  function resizeBg() {
-    
-    if ( (theWindow.width() / theWindow.height()) > aspectRatio ) {
-        $bg
-          .removeClass()
-          .addClass('bgwidth');
-    } else {
-        $bg
-          .removeClass()
-          .addClass('bgwidth');
-    }          
-  }
-                          
-  theWindow.resize(function() {
-        resizeBg();
-      }).trigger("resize");
-
-});
-</script>

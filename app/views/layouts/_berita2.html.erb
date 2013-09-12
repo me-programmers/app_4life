@@ -1,0 +1,83 @@
+<!-- Example row of columns -->
+<div class="row-fluid">
+  <div class="span6">
+    <h2>Even</h2>
+    <div class="progress progress-info progress-striped">
+      <div class="bar" style="width: 30%;"></div>
+    </div>
+    <table class="table table-bordered table-striped table-hover">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Nama Kejuaraan</th>
+          <th>Tanggal</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Kejuaraan 1</td>
+          <td>Oct 21 2013 - Oct 26 2013 </td>          
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Kejuaraan 2</td>
+          <td>Nov 21 2013 - Nov 26 2013 </td>          
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Kejuaraan 3</td>
+          <td>Dec 21 2013 - Dec 26 2013 </td>          
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Kejuaraan 4</td>
+          <td>Dec 21 2013 - Dec 26 2013 </td>          
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Kejuaraan 5</td>
+          <td>Dec 21 2013 - Dec 26 2013 </td>          
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Kejuaraan 6</td>
+          <td>Dec 21 2013 - Dec 26 2013 </td>          
+        </tr>
+      </tbody>
+    </table>
+    <p><a class="btn btn-primary" href="#">Selengkapnya &raquo;</a></p>
+  </div>
+  <div class="span6">
+    <h2>Profil Pemain</h2>
+    <div class="progress progress-info progress-striped">
+      <div class="bar" style="width: 30%;"></div>
+    </div>
+    <div id="myProfil" class="carousel slide">
+      <ol class="carousel-indicators">
+        <li data-target="#myProfil" data-slide-to="0" class="active"></li>
+        <li data-target="#myProfil" data-slide-to="1"></li>
+      </ol>
+      <!-- Carousel items -->
+      <div class="carousel-inner">
+        <div class="active item"><center><%= image_tag("liliyana72.jpg", :width => "194") %></center></div>
+        <div class="item"><center><%= image_tag("tontowi.jpg", :width => "194") %></center></div>
+      </div>
+      <!-- Carousel nav -->
+      <a class="carousel-control left" href="#myProfil" data-slide="prev">&lsaquo;</a>
+      <a class="carousel-control right" href="#myProfil" data-slide="next">&rsaquo;</a>
+    </div>
+  </div>
+</div>        
+
+<script>
+  !function ($) {
+    $(function(){
+      // carousel demo
+      $('#myProfil').carousel({
+        interval: 2000
+      })
+    })
+  }(window.jQuery)
+</script>

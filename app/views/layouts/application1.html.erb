@@ -18,21 +18,29 @@
             <%= render 'layouts/navigation' %>        
           </nav>
         </div>
-        <%= render 'layouts/carousel' %>      
-        <%= render 'layouts/berita1' %>
-        <%= render 'layouts/berita2' %>
-        <div id="main" role="main">
-          <div class="container">
-            <div class="content">
-              <footer>
-                <div class="container">
-                  <p class="muted credit">Developed on 2013</p>
-                </div>
-              </footer>
+    <%= render 'layouts/carousel' %> 
+      
+    <%= render 'layouts/berita1' %>
+    <%= render 'layouts/berita2' %>
+    <div id="main" role="main">
+      <div class="container">
+
+        <div class="content">
+           <div class="row">
+            <div class="span12">
+              <%= render 'layouts/messages' %>
+              <%= yield %>
             </div>
-          </div> <!--! end of .container -->
-        </div> <!--! end of #main -->
+          </div>
+          <footer>
+          <div class="container">
+            <p class="muted credit">Example courtesy <a href="http://martinbean.co.uk">Martin Bean</a> and <a href="http://ryanfait.com/sticky-footer/">Ryan Fait</a>.</p>
+          </div>
+          </footer>
+        </div>
       </div> <!--! end of .container -->
+    </div> <!--! end of #main -->
+    </div> <!--! end of .container -->
     </div> <!--! end of .navbar-wrapper -->
   </body>
 </html>

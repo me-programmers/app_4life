@@ -1,0 +1,51 @@
+<!-- Example row of columns -->
+<div class="row-fluid">
+  <div class="span6">
+    <h3>Berita Terbaru</h3>
+    <div class="progress progress-info progress-striped">
+      <div class="bar" style="width: 30%;"></div>
+    </div>
+    <div class="alert3d">
+      <div class="box effect8">
+        <h4 class="alert-heading">(World Championships 2013) Keluarga Mohammad Ahsan Sempat Deg-degan Nonton Pertandingan Final</h4>
+      </div>
+    </div>
+    <div class="box effect8">
+      <h4 class="alert-heading">(World Championships 2013) Tiga Kali Juara Dunia, Liliyana Natsir Cetak Sejarah Baru</h4>
+    </div>
+    <div class="box effect8">
+      <h4 class="alert-heading">(World Championships 2013) Kembali ke Tanah Air, Tontowi/Liliyana dan Hendra/Ahsan Disambut Meriah</h4>
+    </div>
+  </div>
+  <div class="span6">
+    <h2>Berita Nasional</h2>
+    <div class="progress progress-info progress-striped">
+      <div class="bar" style="width: 30%;"></div>
+    </div>
+    <STRONG>
+      <p>Semangati Peserta PJBM, Gita Wirjawan Berbagi Kisah Inspiratif</p>
+    </STRONG>
+    <p>(Jakarta, 12/5/2013) Ditengah kesibukannya Ketua Umum PP PBSI Gita Wirjawan meluangkan waktu untuk memberi dukungan kepada peserta Pelatihan Jurnalistik Bulu Tangkis Mahasiswa (PJBM) 2013. Sebanyak 142 mahasiswa dari 44 universitas menjalani pelatihan di Pelatnas Cipayung pada hari Sabtu (11/5).</p>
+    <p><a class="btn btn-primary" href="#">Selengkapnya &raquo;</a></p>
+ </div>
+</div>
+
+<script>
+  $(document).ready(function(){
+
+    var message = $(".alert-color-gray"),
+    tl = new TimelineMax({repeat:5, repeatDelay:2, yoyo:true, delay:1});
+
+    TweenLite.set(".alert3d", {perspective:1200});
+
+    tl.to(message, 1, {rotationX:-90}, "+=1")
+    //.set(message, {text:"TWEENING!"})
+    .fromTo(message, 1, {rotationX:90}, {rotationX:0, immediateRender:false})
+    ;
+
+      
+    tl.timeScale(3.5);
+  
+
+  });
+</script>

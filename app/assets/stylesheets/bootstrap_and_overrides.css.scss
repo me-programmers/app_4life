@@ -1,10 +1,18 @@
 @import "bootstrap";
-
+body { padding-top: 60px; }
 @import "bootstrap-responsive";
 
 body { 
 	background-image:url('/assets/sos.png');
 	background-repeat: repeat-x repeat-y;
+}
+
+#logo-utama {
+	background-image:url('/assets/logo_utama.png');
+	width: 500px;
+	height: 85px;
+	position: absolute;
+	top: 0px;
 }
 
 #bodyback { top: 0; left: 0; }
@@ -13,12 +21,12 @@ body {
 .bgheight { height: 100%; }
 
 .navbar-wrapper {
-	position: absolute;
+	
 	top: 0;
 	left: 0;
 	right: 0;
 	z-index: 10;
-	margin-top: 20px;
+	margin-top: 25px;
 	margin-bottom: -90px;
 }
 
@@ -93,3 +101,7 @@ body {
          -o-transform:skew(8deg) rotate(3deg); 
             transform:skew(8deg) rotate(3deg);
 }  
+
+.logo2 > img {
+	margin: 0 0 4px 0;	
+}

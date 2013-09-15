@@ -10,8 +10,10 @@
     <%= yield(:head) %>
   </head>
   <body class="<%= controller_name %> <%= action_name %>">  
+
     <div class="navbar-wrapper">
       <div class="container">
+        <div id="logo-utama"></div>
         <div class="navbar navbar-inverse">
           <nav class="navbar-inner">        
             <%= render 'layouts/navigation' %>        

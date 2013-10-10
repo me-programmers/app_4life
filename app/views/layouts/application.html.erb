@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "App Pbsi" %></title>
-    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "PBSI Sulsel" %>">
+    <title><%= content_for?(:title) ? yield(:title) : "TRANSFERFACTOR SOLUTION" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "TRANSFERFACTOR SOLUTION" %>">
     <%= stylesheet_link_tag "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
@@ -19,13 +19,17 @@
             <%= render 'layouts/navigation' %>        
           </nav>
         </div>
-        <%= render 'layouts/carousel' %>      
-        <%= render 'layouts/berita1' %>
-        <%= render 'layouts/berita2' %>
+        <%= render 'layouts/carousel' %>  
         <div id="main" role="main">
           <div class="container">
-            <%= render 'layouts/utama' %>
-            <div class="content">             
+            
+            <div class="content">    
+              <div class="row">
+                <div class="span12">
+                  <%= render 'layouts/messages' %>
+                  <%= yield %>
+                </div>
+              </div>         
               <footer>
                 <div class="container">
                   <p class="muted credit">Developed on 2013</p>

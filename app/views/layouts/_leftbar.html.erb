@@ -1,0 +1,42 @@
+<!-- Example row of columns -->
+<div class="span3">
+  <h3>Tahukah Anda?</h3>
+  <div class="progress progress-info progress-striped">
+    <div class="bar" style="width: 30%;"></div>
+  </div>
+  <ul>
+    <li>Apakah TRANSFERFACTOR itu?</li>
+    <li>Pembuatan TRANSFERFACTOR</li>
+    <li>Apa kata Dokter & Pakar Kesehatan tentang TRANSFERFACTOR</li>
+  </ul>
+  <h3>4LIFE RESEARCH</h3>
+  <div class="progress progress-info progress-striped">
+    <div class="bar" style="width: 30%;"></div>
+  </div>
+  <p><strong>4LIFE RESEARCH</strong> merupakan perusahaan pemimpin riset nutrisi dunia. Didirikan tahun 1998 yang berkantor pusat di Amerika.</p>
+  <h4>Addess: 9850 South 300, West Sandy, UT 84070-3262<br />
+  Phone: 801-562-3600<br />
+  Fax: 801-562-3750<br />
+  Web: www.4life.com</h4>
+</div>
+
+
+<script>
+  $(document).ready(function(){
+
+    var message = $(".alert-color-gray"),
+    tl = new TimelineMax({repeat:5, repeatDelay:2, yoyo:true, delay:1});
+
+    TweenLite.set(".alert3d", {perspective:1200});
+
+    tl.to(message, 1, {rotationX:-90}, "+=1")
+    //.set(message, {text:"TWEENING!"})
+    .fromTo(message, 1, {rotationX:90}, {rotationX:0, immediateRender:false})
+    ;
+
+      
+    tl.timeScale(3.5);
+  
+
+  });
+</script>

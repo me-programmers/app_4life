@@ -1,4 +1,5 @@
 AppPbsi::Application.routes.draw do
+	get 'home/produk'
   authenticated :user do
     root :to => 'home#index'
   end
